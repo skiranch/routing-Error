@@ -1,0 +1,60 @@
+<div class="panel-header">
+<div class="panel-body">
+  <div *ngFor="let details of myarray; let myIndex=index">
+   <div class="panel panel-default" [style.border-left]='details.color' style="margin:4% 5% 2% 5%;" >
+   <div class="panel-heading" style="height:100px;">
+    <div class="col-xs-6">
+    <div style="font-size: 150%;float: left;"> {{details.headlabel}}</div><br><br>
+    <div style="font-size: 120%; color: red"> {{details.headlabel2}}</div></div>
+    <div class="col-xs-6">
+    <div style="float: right;"><button  class="button2">COPY TO..</button> &nbsp; &nbsp; <button class="button3">EDIT</button></div>
+    </div>
+    </div>
+   <div class="panel-body" style="padding: 5% 3% 7% 10%;">
+      <div class="row">
+     <div class="col-xs-6">
+       <div style="font-size:110; opacity:0.5; line-height:200%;">STORIES</div>
+       <div *ngFor="let storydata of details.stories">
+        <div style="line-height:200%;"> {{storydata.sname}}</div>
+       </div>
+      </div>
+     <div class="col-xs-6">
+     <div style="font-size:110; opacity:0.5; line-height:200%;">SCHEDULED PUBLISHING</div>
+     <div *ngFor="let schdata of details.sch">
+        <div style="line-height:200%;"> {{schdata.schlabel}}</div>
+       </div>
+    </div>
+    </div>
+<br><br>
+    <div style="font-size:110; opacity:0.5; line-height:200%;">{{details.imglable}} &nbsp; | {{details.imglable2}}</div><br>
+ 
+   <div class="row">
+     
+      <div class="col-xs-2" style="border-left:2px solid #0000">
+      <div *ngIf='!details.boxdisplay'> 
+      <img (click)=toggleTextbox(myIndex); src="http://icons.iconarchive.com/icons/custom-icon-design/mono-general-1/512/add-icon.png"  width="100" height="100">
+      </div>
+      <div *ngIf='details.boxdisplay'>
+          <div class="form-group">
+            
+            <input #newImg class="form-control" placeholder="Paste Image Url here" required> <br>
+            <div class="btn-group" >
+          <button (click)=addImage(newImg.value,myIndex); class="btn btn-primary"><span style="font-size: 70%;">Add</span></button>
+          <button  (click)=toggleTextbox(myIndex); class="btn btn-info"><span style="font-size: 70%;">Hide</span></button>
+          </div>
+      </div></div>
+       </div>
+     
+      <div *ngFor="let myimages of details.imgarray">
+      <div class="col-xs-2"><img [(src)]='myimages.imgurl'  width="100" height="100"></div>
+      
+   </div>
+   </div><br>
+ 
+  </div>
+  </div>
+  
+</div>
+</div>
+</div>
+

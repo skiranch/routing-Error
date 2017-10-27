@@ -1,0 +1,62 @@
+.profile{
+    margin-top:10%;
+    margin-left: 0%;
+    
+}
+
+.profileName{
+    margin:6% 0% 0% -22%; 
+    font-size:150%;   
+    font-family: Century Gothic;
+}
+
+.logo{
+    padding-left:20%;
+    padding-top:1%;
+    align-content:center;
+}
+
+
+tab_menuicon
+{
+    margin-left: 20%; 
+    font-size: 120%;
+}
+
+.tab_menuicon{
+    margin-left: 20%; 
+    font-size: 120%;
+}
+.tab_menuscript{
+    margin-left:10%;
+    display: inline;
+}
+
+hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-18 { font-size: 18px; }
+
+.panel-heading .accordion-toggle:after {
+    font-family: 'Glyphicons Halflings'; 
+    content: "\e114";   
+    float: right;     
+    color: grey;       
+}
+.panel-heading .accordion-toggle.collapsed:after {
+    content: "\e080";
+}
+.panel, .panel-group .panel-heading+.panel-collapse>.panel-body{
+    border: none;
+    background-color: #fafafa !important;
+}
+.panel-default,.panel-heading{
+    background-color: #fafafa !important;
+}
+.panel-body{
+    padding: 2px;
+    
+}

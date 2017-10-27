@@ -1,0 +1,21 @@
+.panel-header{
+    border-left: 1px solid;
+    border-left-color: #E5E4E2;
+}
+.panel-body,
+.panel-heading{
+    border:1px solid;
+    border-color: #E5E4E2;
+    border-left: none!important;
+}
+.panel-body{
+    border-top: none!important;
+}
+.panel-heading{
+    border-bottom: none!important;
+    background: grey;
+    
+}
+.panel-body{
+    background: white;
+}
