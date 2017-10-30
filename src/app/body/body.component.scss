@@ -18,3 +18,18 @@
     padding-top: 2%
     }
 }
+.data_head{
+    font-size:110;
+    opacity:0.5;
+    line-height:200%;
+}
+.customhead{
+    &_label1{
+    font-size: 150%;
+    float: left;
+    }
+    &__lable2{
+    font-size: 120%;
+    color: red;
+    }
+}
