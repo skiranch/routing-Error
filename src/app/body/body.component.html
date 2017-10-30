@@ -1,15 +1,20 @@
-<div class="panel-header">
-<div class="panel-body">
-  <div *ngFor="let details of myarray; let myIndex=index">
+
+ <ng-container *ngFor="let details of myarray; let myIndex=index">
+
+  <div *ngIf="filterOptionStore=='all' || checkStore(filterOptionStore,details.stories)">
+   
+      <div *ngIf="filterOption=='all'|| filterOption==details.headlabel2">
+        
    <div class="panel panel-default" [style.border-left]='details.color' style="margin:4% 5% 2% 5%;" >
-   <div class="panel-heading" style="height:100px;">
+   <div class="panel-heading">
     <div class="col-xs-6">
     <div style="font-size: 150%;float: left;"> {{details.headlabel}}</div><br><br>
-    <div style="font-size: 120%; color: red"> {{details.headlabel2}}</div></div>
+    <div style="font-size: 120%; color: red"> {{details.headlabel2}}  </div></div>
     <div class="col-xs-6">
     <div style="float: right;"><button  class="button2">COPY TO..</button> &nbsp; &nbsp; <button class="button3">EDIT</button></div>
     </div>
     </div>
+   
    <div class="panel-body" style="padding: 5% 3% 7% 10%;">
       <div class="row">
      <div class="col-xs-6">
@@ -32,7 +37,7 @@
      
       <div class="col-xs-2" style="border-left:2px solid #0000">
       <div *ngIf='!details.boxdisplay'> 
-      <img (click)=toggleTextbox(myIndex); src="http://icons.iconarchive.com/icons/custom-icon-design/mono-general-1/512/add-icon.png"  width="100" height="100">
+      <img (click)=toggleTextbox(myIndex); src="../assets/images/add.PNG"  width="100" height="100">
       </div>
       <div *ngIf='details.boxdisplay'>
           <div class="form-group">
@@ -52,9 +57,9 @@
    </div><br>
  
   </div>
+
   </div>
   
 </div>
 </div>
-</div>
-
+</ng-container>
