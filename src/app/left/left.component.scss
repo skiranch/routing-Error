@@ -1,7 +1,17 @@
 @mixin bgcolor{ background-color: #fafafa !important;}
+<<<<<<< HEAD
 .glyphconPad{padding-left:2%}
 
 
+=======
+.glyphconPad { padding-left:2% }
+
+.container{
+    &__width{
+    width: 620px;
+}
+}
+>>>>>>> e9ddbb45407b2370b3b1278d8a9e8a998ec88d77
 .pic{
         width:100px;
         height:100px;
@@ -20,12 +30,17 @@
     margin-left: 0%; 
     }
     &__Name{
+<<<<<<< HEAD
     margin:6% 0% 0% -22%; 
+=======
+    margin:6% 0% 0% 0%; 
+>>>>>>> e9ddbb45407b2370b3b1278d8a9e8a998ec88d77
     font-size:150%;   
     font-family: Century Gothic;
     }
 }
 .company__logo{
+<<<<<<< HEAD
     margin-left:20%;
     padding-top:1%;
     align-content:center;
@@ -33,6 +48,14 @@
 
  
 
+=======
+    padding-left:20%;
+    padding-top:1%;
+    align-content:center;
+    }
+
+
+>>>>>>> e9ddbb45407b2370b3b1278d8a9e8a998ec88d77
 .tab{
     &_menuicon{
     margin-left: 20%; 
@@ -62,6 +85,7 @@ hr{
     margin-top: 10%;
     margin-left: 20%;
     font-size: 120%;
+<<<<<<< HEAD
 }
 .panel{
     @include bgcolor;
@@ -95,3 +119,38 @@ hr{
         }
     }
 }
+=======
+}
+.panel{
+    @include bgcolor;
+    border: none;
+    .panel-default{
+        margin-left:10%;
+        font-size: 120%;
+    }
+    &-body{
+        padding: 2px;
+    }
+    &-default{
+        @include bgcolor;
+    }
+    &-heading{
+        @include bgcolor;
+        .accordion-toggle:after{
+            font-family: 'Glyphicons Halflings'; 
+            content: "\e114";   
+            float: right;     
+            color: grey;  
+        }
+        .accordion-toggle.collapsed:after{
+            content: "\e080";
+        }
+    }
+    &-group{
+        .panel-heading+.panel-collapse>.panel-body{
+            @include bgcolor;
+            border: none;
+        }
+    }
+}
+>>>>>>> e9ddbb45407b2370b3b1278d8a9e8a998ec88d77

@@ -17,4 +17,22 @@
     height: 100px;
     padding-top: 2%
     }
+<<<<<<< HEAD
+=======
+}
+.data_head{
+    font-size:110;
+    opacity:0.5;
+    line-height:200%;
+}
+.customhead{
+    &_label1{
+    font-size: 150%;
+    float: left;
+    }
+    &__lable2{
+    font-size: 120%;
+    color: red;
+    }
+>>>>>>> e9ddbb45407b2370b3b1278d8a9e8a998ec88d77
 }
