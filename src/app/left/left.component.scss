@@ -1,17 +1,15 @@
 @mixin bgcolor{ background-color: #fafafa !important;}
-<<<<<<< HEAD
 .glyphconPad{padding-left:2%}
 
 
-=======
-.glyphconPad { padding-left:2% }
-
-.container{
-    &__width{
-    width: 620px;
+.menu{
+    &__topmargin{
+        margin-top:0px;
+        margin-right:0%;
+        margin-left: 0;
+        padding: 0;
+    }
 }
-}
->>>>>>> e9ddbb45407b2370b3b1278d8a9e8a998ec88d77
 .pic{
         width:100px;
         height:100px;
@@ -22,40 +20,47 @@
     margin-top:0px;
 }
 .row{
-    @include bgcolor;
+    &--bgcolor{
+        background-color: #fafafa;
+    }
 }
 .profile{
     &__image{
     margin-top:10%;
-    margin-left: 0%; 
+    margin-left: 10%;
+    padding :10% 0% 10% 10% 
     }
     &__Name{
-<<<<<<< HEAD
-    margin:6% 0% 0% -22%; 
-=======
-    margin:6% 0% 0% 0%; 
->>>>>>> e9ddbb45407b2370b3b1278d8a9e8a998ec88d77
+    margin:15% 0% 15% 10%; 
     font-size:150%;   
     font-family: Century Gothic;
     }
 }
 .company__logo{
-<<<<<<< HEAD
     margin-left:20%;
     padding-top:1%;
     align-content:center;
     }
-
- 
-
-=======
-    padding-left:20%;
-    padding-top:1%;
-    align-content:center;
+.menu{
+    &__home{
+        &--marginMod{
+            margin-top: 10%;
+            margin-left: 19%;
+            font-size: 120%;
+        }
     }
+}
+ 
+.marginMod{
+    margin-left:10%; font-size: 120%;
+}
 
+.panel-body{
+    &--paddingleft{
+        padding-left:2%
+    }
+}
 
->>>>>>> e9ddbb45407b2370b3b1278d8a9e8a998ec88d77
 .tab{
     &_menuicon{
     margin-left: 20%; 
@@ -75,26 +80,20 @@ hr{
 .material-icons.md-light { color: rgba(255, 255, 255, 1); }
 .material-icons.md-18 { font-size: 18px; }
 
-.text-left{
-    .h4{
+.h4{
     margin-left: 10%; 
     margin-top: 10%;
 }
-}
+
 .menufirstIcon{
     margin-top: 10%;
     margin-left: 20%;
     font-size: 120%;
-<<<<<<< HEAD
 }
 .panel{
     @include bgcolor;
     border: none;
-    .panel-default{
-        margin-left:10%;
-        font-size: 120%;
-    }
-    &-body{
+      &-body{
         padding: 2px;
     }
     &-default{
@@ -119,38 +118,3 @@ hr{
         }
     }
 }
-=======
-}
-.panel{
-    @include bgcolor;
-    border: none;
-    .panel-default{
-        margin-left:10%;
-        font-size: 120%;
-    }
-    &-body{
-        padding: 2px;
-    }
-    &-default{
-        @include bgcolor;
-    }
-    &-heading{
-        @include bgcolor;
-        .accordion-toggle:after{
-            font-family: 'Glyphicons Halflings'; 
-            content: "\e114";   
-            float: right;     
-            color: grey;  
-        }
-        .accordion-toggle.collapsed:after{
-            content: "\e080";
-        }
-    }
-    &-group{
-        .panel-heading+.panel-collapse>.panel-body{
-            @include bgcolor;
-            border: none;
-        }
-    }
-}
->>>>>>> e9ddbb45407b2370b3b1278d8a9e8a998ec88d77

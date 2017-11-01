@@ -1,5 +1,5 @@
 <div class="panel panel-default">
-<div class="panel-heading" style="padding: 0 0 0 0;">
+<div class="panel-heading--padding0">
         <div class="header" >
             <div class="header__text">GALLERY FOR </div>
             <div class="header__text" style="font-size: 200%;">General Pants Co.</div>
@@ -8,12 +8,12 @@
             <div class="container__header">
             <div style="float: left"> 
                 <button class="button">
-                   <select (change)='myfilter(myselect.value,myselect2.value)' #myselect type="text"[(ngModel)]="name" name="FILTER BY STATUS" class="dropdown" > 
-                                    <option *ngFor="let n of names" [attr.value]="n" style="background-color:rgba(136, 133, 133, 0.46); ">{{n}}</option>
+                   <select (change)='myfilter(myselect.value,myselect2.value)' #myselect type="text"[(ngModel)]="name" name="FILTER BY STATUS" class="dropdown--bgcolorchange" > 
+                                    <option *ngFor="let n of names" [attr.value]="n">{{n}}</option>
                                   </select></button> &nbsp; &nbsp;&nbsp; &nbsp; 
                                   <button class="button"> 
-                                  <select (change)='myfilter(myselect.value,myselect2.value)' #myselect2 type="text"[(ngModel)]="storeName" name="FILTER BY STORE" class="dropdown" > 
-                                        <option *ngFor="let n of stores" [attr.value]="n" style="background-color:rgba(136, 133, 133, 0.46); ">{{n}}</option>
+                                  <select (change)='myfilter(myselect.value,myselect2.value)' #myselect2 type="text"[(ngModel)]="storeName" name="FILTER BY STORE" class="dropdown--bgcolorchange" > 
+                                        <option *ngFor="let n of stores" [attr.value]="n">{{n}}</option>
                                       </select></button></div>
             <div style="float: right">  <button class="button__inverse">REORDER</button>&nbsp; &nbsp;&nbsp; &nbsp; <button class="button2">CREATE GALLERY</button></div>
            </div>

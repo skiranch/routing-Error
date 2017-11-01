@@ -4,35 +4,60 @@
     border-left-color: #E5E4E2;
     }
     &-body{
-        border-top: none!important;
+        border: none!important;
         background: white;
-       
-    }
+        &--marginMod{
+            padding: 5% 3% 7% 10%;
+            }
+        }
     &-heading{
     border:1px solid;
-    border-color: #E5E4E2;
+    border-color: black;
     border-left: none!important;
     border-bottom: none!important;
     background: grey;
     height: 100px;
     padding-top: 2%
     }
-<<<<<<< HEAD
-=======
 }
-.data_head{
-    font-size:110;
-    opacity:0.5;
+.marginrightbottom{
+    border-right :1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+.panel{
+    &-default{
+        &--marginMod{
+            margin:4% 5% 2% 5%;
+        }
+    }
+}
+.Header{
+    &__Name{
+        font-size: 150%;
+        float: left; 
+    }
+    &__Status{
+        font-size: 120%;
+        color: red
+    }
+}
+.lineHeight{
     line-height:200%;
 }
-.customhead{
-    &_label1{
-    font-size: 150%;
-    float: left;
+.borderline{
+    border-left:2px solid;
+    border-left-color:#000000;
+}
+.btn{
+    &-primary{
+        &--fontsizeChange{
+            font-size: 70%;
+        }
     }
-    &__lable2{
-    font-size: 120%;
-    color: red;
+    &-info{
+        &--fontsizeChange{
+            font-size: 70%;
+        }
     }
->>>>>>> e9ddbb45407b2370b3b1278d8a9e8a998ec88d77
 }

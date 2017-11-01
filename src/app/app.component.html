@@ -1,9 +1,9 @@
 
 <div class="row">
-    <div class="col-md-3">
+    <div class="col-md-3 padding0--borderleft">
     <app-left (showbody)='displayBody($event)'></app-left>
      </div>
-     <div class="col-md-9">
+     <div class="col-md-9 padding0--borderright">
     <app-header (fileterBody)='myFilterBody($event)'></app-header>    
     <app-body   *ngIf='displaystatus' [filterOption]='filterOption' [filterOptionStore]='filterOptionStore'></app-body>
     <app-footer></app-footer>
