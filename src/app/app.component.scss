@@ -1,9 +1,25 @@
+$three:3%;
+$tenpx:10px;
+$light-grey:rgba(136, 133, 133, 0.46);
+$darkColor:rgba(12, 11, 11, 0.884);
+$lightColor:#fafafa;
+
+
+@mixin buttonDec{
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
 .header{
-background-color:#343B48; 
+background-color:$darkColor; 
 margin-left:0%;
 padding-bottom:8%;
-padding-left: 3%;
-padding-right: 3%;
+padding-left: $three;
+padding-right: $three;
 color: whitesmoke;
 
 &__text{
@@ -11,103 +27,80 @@ color: whitesmoke;
     text-align: left;
     padding-left:0%;
 }
-}
+} 
 hr{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: $tenpx;
+    margin-bottom: $tenpx;
 }
-.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light { color:rgba(255, 255, 255, 1) ;
+background-color: $darkColor; }
 .material-icons.md-18 { font-size: 18px; }
 
 
 
-.panel-heading .accordion-toggle:after {
+.panel{
+    border: none;
+    background-color: $lightColor;
+   
+    &-heading{
+        background-color: $lightColor;
+
+        .accordion-toggle:after {
     font-family: 'Glyphicons Halflings'; 
     content: "\e114";   
     float: right;     
     color: grey;       
-}
-.panel-heading .accordion-toggle.collapsed:after {
-    content: "\e080";
-}
-.panel, .panel-group .panel-heading+.panel-collapse>.panel-body{
-    border: none;
-    background-color: #fafafa !important;
-}
-.panel-default,.panel-heading{
-    background-color: #fafafa !important;
-}
-.panel-body{
+        }
+        .accordion-toggle.collapsed:after {
+            content: "\e080";
+        }
+    }
+    &-group .panel-heading+.panel-collapse>.panel-body{
+        border: none;
+        background-color: $lightColor;
+    }
+    &-default{
+        background-color: $lightColor;
+   }
+    &-body{
     padding: 2px;
-    
+    }
 }
 
-  .button {
-    background-color: rgba(136, 133, 133, 0.46);
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
+
 .container{
     &__header{
-        width:960px;
+        width:930px;
     }
 }
-
 .button {
-    background-color: rgba(136, 133, 133, 0.46);
+    background-color:$light-grey ;
     border: none;
     color: white;
     padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
-    .button__inverse{
-        background-color: #343B48;
-        border:2px solid;
-        border-color: #A3A1A1;
+    @include buttonDec;
+  
+    &__inverse{
+        background-color: $darkColor;
+        border:2px solid #A3A1A1;
         color: white;
         padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
+        @include buttonDec;
     }
+}
 
-    .button2 {
+.button2 {
         background-color:#ffffff;
        color: rgb(8, 8, 8);
        padding: 13px 28px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        border: 1px solid black;
+       border: 1px solid $darkColor;
+       @include buttonDec;
     }
 
-    .button3 {
-        background-color: rgba(12, 11, 11, 0.884);
+.button3 {
+        background-color: $darkColor;
         color: white;
-        padding: 13px 28px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
         border: 1px solid white;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
+        padding: 13px 28px;
+        @include buttonDec;
     }

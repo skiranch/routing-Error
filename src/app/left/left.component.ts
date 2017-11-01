@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,Input,Output,EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-left',
   templateUrl: './left.component.html',
   styleUrls: ['./left.component.scss']
 })
-export class LeftComponent implements OnInit {
+export class LeftComponent {
+@Output()
+ showbody:EventEmitter<boolean> =new EventEmitter<boolean>();
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+ displayBody()
+ {
+   this.showbody.emit(true);
+   
+ }
 }
