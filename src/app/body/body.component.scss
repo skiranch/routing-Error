@@ -1,9 +1,38 @@
 
 @import '~assets/sass/mixins',
         '~assets/sass/buttons';
+$padding:5% 10%;
+$panel-border:#D1D0CE;
 
+.button__primary{
+        &--bgcolor{
+            padding:$padding;
+            background-color: snow;
+                color: black;
+                border: 1px solid gray;
+    
+            }
+        &--inversecolor{
+            padding:$padding;
+            background-color: #3B3131;
+            color:snow;
+            border: 1px solid gray;
+                }
+        }
+.right{
+        float: right;
+        align-content: flex-end;
+        padding-left: 22%;
+        }
 
 .panel{
+    &-heading{
+        background-color: rgba(211,211,211,0.5);
+        border:1px solid;
+        border-color: $panel-border;
+        border-left: none!important;
+        border-bottom: none!important;
+        }
 
     &-body{
          &--marginMod{
@@ -19,8 +48,8 @@
 .body{
     &__margin{
         &--rightbottom{
-    border-right :1px solid #000000;
-    border-bottom: 1px solid #000000;
+    border-right :1px solid $panel-border;
+    border-bottom: 1px solid$panel-border;
                 }
             }
 
@@ -41,17 +70,8 @@
         border-left:2px solid;
         border-left-color:#000000;
         }
-    }
-
-.btn{
-    &-primary{
-        &--fontsizeChange{
-            font-size: 70%;
-        }
-    }
-    &-info{
-        &--fontsizeChange{
-            font-size: 70%;
-        }
+    
+    &__data-head{
+        color: gray;
     }
 }

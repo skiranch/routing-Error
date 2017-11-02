@@ -24,30 +24,44 @@
         background-color: #fafafa;
     }
 }
-.profile{
-    &__image{
+.menu{
+    &__profile{
+    &--image{
     margin-top:10%;
     margin-left: 10%;
     padding :10% 0% 10% 10% 
     }
-    &__Name{
+    &--Name{
     margin:15% 0% 15% 10%; 
     font-size:150%;   
     font-family: Century Gothic;
     }
-}
-.company__logo{
+}   &__company--logo{
     margin-left:20%;
     padding-top:1%;
     align-content:center;
     }
-.menu{
     &__home{
         &--marginMod{
             margin-top: 5%;
             margin-left: 19%;
             font-size: 120%;
         }
+    }
+    &__tab{
+        &--menuicon{
+        margin-left: 20%; 
+        font-size: 120%;
+        }
+        &--menuscript{
+        margin-left:10%;
+        display: inline;
+        }
+    }
+    &__firstIcon{
+        margin-top: 10%;
+        margin-left: 20%;
+        font-size: 120%;
     }
 }
  
@@ -61,16 +75,7 @@
     }
 }
 
-.tab{
-    &_menuicon{
-    margin-left: 20%; 
-    font-size: 120%;
-    }
-    &_menuscript{
-    margin-left:10%;
-    display: inline;
-    }
-}
+
 
 hr{
     margin-top: 10px;
@@ -85,11 +90,7 @@ hr{
     margin-top: 10%;
 }
 
-.menufirstIcon{
-    margin-top: 10%;
-    margin-left: 20%;
-    font-size: 120%;
-}
+
 .panel{
     @include bgcolor;
     border: none;

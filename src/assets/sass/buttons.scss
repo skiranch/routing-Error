@@ -1,5 +1,5 @@
 @import '~assets/sass/mixins';
-
+$padding-head_body:4% 8% 4% 8%;
 .button{
     &__primary{
         @include button;

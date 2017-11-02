@@ -9,28 +9,28 @@
     <div class="col-xs-6">
     <div class="body__header--name"> {{details.headlabel}}</div><br><br>
     <div class="body__header--status"> {{details.headlabel2}}  </div></div>
-    <div class="col-xs-6">
-    <div style="float: right;"><button  class="button2">COPY TO..</button> &nbsp; &nbsp; <button class="button3">EDIT</button></div>
+    <div class="col-xs-6 right">
+    <button  class="button__primary--bgcolor">COPY TO..</button> &nbsp; &nbsp; <button class="button__primary--inversecolor">EDIT</button>
     </div>
     </div>
    
    <div class="panel-body--marginMod">
       <div class="row">
      <div class="col-xs-6">
-       <div class="data_head" >STORES</div>
+       <div class="body__data-head" >STORES</div>
        <div *ngFor="let storydata of details.stories">
         <div class="body__lineHeight"> {{storydata.sname}}</div>
        </div>
       </div>
      <div class="col-xs-6">
-     <div class="data_head">SCHEDULED PUBLISHING</div>
+     <div class="body__data-head">SCHEDULED PUBLISHING</div>
      <div *ngFor="let schdata of details.sch">
         <div class="body__lineHeight"> {{schdata.schlabel}}</div>
        </div>
     </div>
     </div>
 <br><br>
-    <div class="data_head">{{details.imglable}} &nbsp; | {{details.imglable2}}</div><br>
+    <div class="body__data-head">{{details.imglable}} &nbsp; | {{details.imglable2}}</div><br>
  
    <div class="row">
      

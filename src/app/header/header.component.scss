@@ -1,7 +1,7 @@
 @import '~assets/sass/mixins',
         '~assets/sass/buttons';
 
-        $padding:4% 8% 4% 8%;
+        
 
 .header{
     background-color:#343B48; 
@@ -39,14 +39,13 @@
         background-color: rgba(97, 109, 126,0.45);
     }    
     &--margin{
-        padding:$padding;
+        padding:$padding-head_body;
         background-color:inherit;
         color: snow;
         display: inline;
     }
     &--bgcolor{
-        padding:$padding;
-        background-color:inherit;
+        padding:$padding-head_body;
         background-color: snow;
             color: black;
 
