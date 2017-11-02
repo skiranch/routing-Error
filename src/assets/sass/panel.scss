@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+.panel{
+    margin-bottom: 5%;
+    &-heading{
+        border:1px solid;
+        border-color: black;
+        border-left: none!important;
+        border-bottom: none!important;
+        background: grey;
+        height: 100px;
+        padding-top: 2%
+        }
+    &-default{
+        margin: 0;
+        }
+    &-footer{
+        background-color:black; 
+        padding: 2% 2% 10% 5%; 
+        color: #E5E4E2;
+        margin: 0;
+    }
+    &-body{
+        border: none!important;
+        background: white;
+    }
+    &-header{
+        border-left: 1px solid;
+        border-left-color: #E5E4E2;
+        }
+}

@@ -4,7 +4,7 @@ import{ NgFor} from '@angular/common';
 @Component({
   selector: 'app-header',
    templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss','../app.component.scss']
+  styleUrls: ['./header.component.scss','../../assets/sass/panel.scss']
 })
 export class HeaderComponent{
   name: string = "FILTER BY STATUS";

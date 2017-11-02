@@ -1,0 +1,26 @@
+$color__primary--light:#ffff;
+$color__primary:#ffffff !default;
+$color__primary--black:#000000!default;
+$color__dark--light:#dddd;
+
+@mixin button{
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border:1px solid;
+    border-color:$color__primary--black; 
+}
+@mixin dropdownCustom{
+    background-color:rgb(97, 109, 126);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    margin: 4px 2 px;
+    cursor: pointer;
+    color:$color__dark--light;
+    text-align: center;
+    text-decoration: none;
+
+
+    }

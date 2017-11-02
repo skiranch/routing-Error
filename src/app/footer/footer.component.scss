@@ -1,22 +1,15 @@
-.panel{
-    &-footer{
-    background-color:black; 
-    padding: 2% 2% 10% 5%; 
+
+.footer{
+    &__term{
     color: #E5E4E2;
-    margin: 0;
     }
-    &-default{
-        margin: 0;
-    }
-}
-.term
-{
-    color: #E5E4E2;
 }
 
 .modal-body{
+    &--height{
     height: 500px;
     overflow-y: auto;
+    }
 }
 
 p {

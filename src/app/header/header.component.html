@@ -6,17 +6,19 @@
             <hr>
            
             <div class="container__header">
-            <div style="float: left"> 
-                <button class="button">
-                   <select (change)='myfilter(myselect.value,myselect2.value)' #myselect type="text"[(ngModel)]="name" name="FILTER BY STATUS" class="dropdown--bgcolorchange" > 
+            <div class="col-md-6"> 
+                <button class="button__primary--dropDn">
+                   <select (change)='myfilter(myselect.value,myselect2.value)' #myselect type="text"[(ngModel)]="name" name="FILTER BY STATUS" class="dropdownCustom--bgcolorchange" > 
                                     <option *ngFor="let n of names" [attr.value]="n">{{n}}</option>
                                   </select></button> &nbsp; &nbsp;&nbsp; &nbsp; 
-                                  <button class="button"> 
-                                  <select (change)='myfilter(myselect.value,myselect2.value)' #myselect2 type="text"[(ngModel)]="storeName" name="FILTER BY STORE" class="dropdown--bgcolorchange" > 
+                                  <button class="button__primary--dropDn"> 
+                                  <select (change)='myfilter(myselect.value,myselect2.value)' #myselect2 type="text"[(ngModel)]="storeName" name="FILTER BY STORE" class="dropdownCustom--bgcolorchange" > 
                                         <option *ngFor="let n of stores" [attr.value]="n">{{n}}</option>
                                       </select></button></div>
-            <div style="float: right">  <button class="button__inverse">REORDER</button>&nbsp; &nbsp;&nbsp; &nbsp; <button class="button2">CREATE GALLERY</button></div>
-           </div>
+                                      <div class="col-md-6--margin-left">
+            <button class="button__primary--margin">REORDER</button>&nbsp; &nbsp;&nbsp; &nbsp; <button class="button__primary--bgcolor">CREATE GALLERY</button></div>
+           
           </div>
+        </div>
     </div>
 </div>

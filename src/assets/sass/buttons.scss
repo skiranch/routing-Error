@@ -1,0 +1,17 @@
+@import '~assets/sass/mixins';
+
+.button{
+    &__primary{
+        @include button;
+        background-color:$color__primary--black;
+        color: $color__primary--light; 
+        }
+
+    &__inverse{
+        @include button;
+        background-color: $color__primary--light;
+        color: $color__primary--black;
+        }
+}
+
+

@@ -3,7 +3,7 @@ import { Component, OnInit,Input } from '@angular/core';
 @Component({
   selector: 'app-body',
   templateUrl: './body.component.html',
-  styleUrls: ['./body.component.scss','../app.component.scss']
+  styleUrls: ['./body.component.scss','../../assets/sass/panel.scss']
 })
 export class BodyComponent implements OnInit {
   @Input()
